@@ -1,0 +1,63 @@
+.about {
+  position: relative;
+  display: flex;
+  max-height: 50rem;
+  overflow: hidden;
+  justify-content: space-between;
+
+  &__img {
+    height: 50rem;
+    min-width: 35%;
+    min-width: 31.5rem;
+    background-image: url("../../images/about\ image.png");
+    background-size: 100% 100%;
+    overflow: hidden;
+
+    @include breakpoints-down(medium) {
+      width: 100%;
+      min-width: 100%;
+    }
+  }
+
+  .white-overlay {
+    width: 92%;
+    height: 92%;
+    position: absolute;
+    background-color: white;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50px;
+    opacity: 0.4;
+
+    @include breakpoints-up(medium) {
+      width: 88%;
+      height: 88%;
+    }
+
+    @include breakpoints-up(large) {
+      display: none;
+    }
+  }
+
+  &__contents {
+    position: relative;
+    text-align: center;
+    padding: 3rem;
+
+    @include breakpoints-down(medium) {
+      position: absolute;
+      width: 88%;
+      height: 88%;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50px;
+    }
+
+    @include breakpoints-down(small) {
+      padding: 1.5rem;
+    }
+  }
+}

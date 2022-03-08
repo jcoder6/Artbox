@@ -1,0 +1,121 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Stika Banner";
+  font-size: 16px;
+  line-height: 1.6;
+  // overflow: hidden;
+  color: rgb(24, 24, 24);
+  height: 350vh;
+}
+
+.container {
+  max-width: 1440px;
+  margin: auto;
+}
+
+a,
+a:visited,
+a:active {
+  color: black;
+  font-size: 1.2rem;
+  text-decoration: none;
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+button,
+.button,
+.buttons {
+  padding: 0.7rem 2.5rem;
+  border-radius: 100px;
+  border: none;
+  background-color: $lightBrown;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+
+  &:hover {
+    background-color: white;
+    border: 2px solid $darkBrown;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+    color: $darkBrown;
+  }
+}
+
+.user-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.5rem;
+  width: 2.5rem;
+  border: 2px solid $darkBrown;
+  border-radius: 50%;
+  transition: all 250ms ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    border: none;
+    background-color: $lightBrown;
+
+    svg path {
+      fill: white;
+    }
+  }
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 1.1;
+  margin-bottom: 1.2rem;
+  @include breakpoints-down(medium) {
+    font-size: 2.5rem;
+  }
+  @include breakpoints-down(small) {
+    font-size: 2.3rem;
+  }
+  @include breakpoints-down(xsmall) {
+    font-size: 2.2rem;
+  }
+}
+
+.title1 {
+  font-size: 3.2rem;
+  padding: 0 1.5rem 0.3rem;
+  border-bottom: 4px solid $lightBrown;
+  font-weight: 300;
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1.5rem;
+  line-height: 2;
+
+  @include breakpoints-down(small) {
+    font-size: 1.3rem;
+    line-height: 1.8;
+  }
+}

@@ -1,0 +1,53 @@
+.partners {
+  text-align: center;
+  margin-bottom: 3rem;
+  .p1 {
+    display: flex;
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+
+    .pb {
+      @include breakpoints-down(medium) {
+        display: none;
+      }
+    }
+
+    .partnerships-logos {
+      // border: 1px solid red;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 70%;
+      flex-wrap: wrap;
+      @include breakpoints-down(medium) {
+        min-width: 90%;
+      }
+
+      @include breakpoints-down(small) {
+        justify-content: space-evenly;
+        gap: 1rem 0;
+        min-width: 29rem;
+      }
+
+      .p-logos {
+        width: 16%;
+
+        @include breakpoints-down(medium) {
+          min-width: 16%;
+        }
+
+        @include breakpoints-down(small) {
+          min-width: 35%;
+        }
+      }
+    }
+  }
+
+  .shopNow-btn {
+    font-size: 2rem;
+    padding: 1rem 5rem;
+    font-weight: 300;
+  }
+}

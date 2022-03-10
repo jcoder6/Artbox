@@ -536,7 +536,6 @@ p {
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
     gap: 1rem 0;
-    min-width: 29rem;
   }
 }
 

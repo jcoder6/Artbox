@@ -125,6 +125,15 @@ h1 {
   margin-bottom: 2rem;
 }
 
+.title2 {
+  font-size: 3.2rem;
+  padding: 0 1.5rem 0.3rem;
+  border-bottom: 4px solid #473e2c;
+  font-weight: 300;
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+
 h3 {
   font-size: 1.5rem;
 }
@@ -639,5 +648,99 @@ p {
   .about__contents {
     padding: 1.5rem;
   }
+}
+
+.feature {
+  padding: 2rem 5rem;
+  background-color: #ddc28a;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 3rem;
+}
+
+.feature .title2 {
+  position: relative;
+  left: 53%;
+}
+
+.feature .featured-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.feature .featured-content__categs {
+  width: 38%;
+}
+
+.feature .featured-content__categs ul {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.feature .featured-content__categs ul .title-categ {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.feature .featured-content__categs ul li {
+  padding: 1rem 2rem;
+  width: 100%;
+  background-color: #473e2c;
+  color: white;
+  font-size: 2rem;
+}
+
+.feature .featured-content__art-works {
+  width: 58%;
+}
+
+.feature .featured-content__art-works .feature-img-cont {
+  width: 100%;
+  height: 25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.feature .featured-content__art-works .feature-img {
+  width: 33.3333333%;
+  overflow: hidden;
+}
+
+.feature .featured-content__art-works .feature-img img {
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: -webkit-transform 300ms ease-in-out;
+  transition: -webkit-transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
+}
+
+.feature .featured-content__art-works .feature-img img:hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 /*# sourceMappingURL=style.css.map */

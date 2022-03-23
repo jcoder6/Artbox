@@ -18,6 +18,7 @@ body {
   font-size: 16px;
   line-height: 1.6;
   // overflow: hidden;
+  scroll-behavior: smooth;
   color: rgb(24, 24, 24);
   height: 350vh;
 }
@@ -95,6 +96,10 @@ h1 {
   @include breakpoints-down(xsmall) {
     font-size: 2.2rem;
   }
+}
+
+.scroll-none {
+  overflow: hidden;
 }
 
 .title1 {

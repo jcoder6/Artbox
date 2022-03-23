@@ -18,6 +18,7 @@ body {
   font-family: "Stika Banner";
   font-size: 16px;
   line-height: 1.6;
+  scroll-behavior: smooth;
   color: #181818;
   height: 350vh;
 }
@@ -114,6 +115,10 @@ h1 {
   h1 {
     font-size: 2.2rem;
   }
+}
+
+.scroll-none {
+  overflow: hidden;
 }
 
 .title1 {
@@ -662,9 +667,30 @@ p {
   padding-bottom: 3rem;
 }
 
+@media (max-width: 63.9375rem) {
+  .feature {
+    padding: 4rem 1rem;
+  }
+}
+
 .feature .title2 {
   position: relative;
   left: 53%;
+}
+
+@media (max-width: 63.9375rem) {
+  .feature .title2 {
+    font-size: 3rem;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 39.9375rem) {
+  .feature .title2 {
+    font-size: 2rem;
+  }
 }
 
 .feature .featured-content {
@@ -676,8 +702,27 @@ p {
           justify-content: space-between;
 }
 
+@media (max-width: 39.9375rem) {
+  .feature .featured-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 3rem;
+  }
+}
+
 .feature .featured-content__categs {
   width: 38%;
+}
+
+@media (max-width: 39.9375rem) {
+  .feature .featured-content__categs {
+    width: 100%;
+  }
 }
 
 .feature .featured-content__categs ul {
@@ -697,6 +742,12 @@ p {
           align-items: center;
 }
 
+@media (max-width: 39.9375rem) {
+  .feature .featured-content__categs ul {
+    gap: 1rem;
+  }
+}
+
 .feature .featured-content__categs ul .title-categ {
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -711,8 +762,26 @@ p {
   font-size: 2rem;
 }
 
+@media (max-width: 63.9375rem) {
+  .feature .featured-content__categs ul li {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 39.9375rem) {
+  .feature .featured-content__categs ul li {
+    font-size: 1.4rem;
+  }
+}
+
 .feature .featured-content__art-works {
   width: 58%;
+}
+
+@media (max-width: 39.9375rem) {
+  .feature .featured-content__art-works {
+    width: 100%;
+  }
 }
 
 .feature .featured-content__art-works .feature-img-cont {

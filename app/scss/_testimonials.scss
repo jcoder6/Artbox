@@ -1,0 +1,44 @@
+.testimonial {
+  text-align: center;
+  .testi-cont {
+    margin: 0 auto;
+    // border: 1px solid $lightBrown;
+    // background-color: red;
+    padding: 2rem 4rem;
+  }
+
+  .testi-item-cont {
+    // border: 1px solid $darkBrown;
+    display: flex;
+    overflow: hidden;
+    gap: 5%;
+  }
+
+  .testi-item {
+    width: 30%;
+    min-width: 30%;
+    background-color: $lightBrown;
+    border-radius: 50px;
+    border: 1px solid $darkBrown;
+    padding: 1rem;
+    max-height: 35rem;
+    min-height: 35rem;
+
+    .item-img {
+      width: 8rem;
+      height: 8rem;
+      border-radius: 50%;
+      border: 1px solid $darkBrown;
+      margin: 0 auto;
+      margin-bottom: 2rem;
+      margin-top: 2rem;
+    }
+    h3 {
+      margin-bottom: 2rem;
+    }
+    p {
+      text-align: left;
+      line-height: 1.5;
+    }
+  }
+}

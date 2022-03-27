@@ -140,7 +140,7 @@ h1 {
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 p {
@@ -811,5 +811,52 @@ p {
 .feature .featured-content__art-works .feature-img img:hover {
   -webkit-transform: scale(1);
           transform: scale(1);
+}
+
+.testimonial {
+  text-align: center;
+}
+
+.testimonial .testi-cont {
+  margin: 0 auto;
+  padding: 2rem 4rem;
+}
+
+.testimonial .testi-item-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  gap: 5%;
+}
+
+.testimonial .testi-item {
+  width: 30%;
+  min-width: 30%;
+  background-color: #ddc28a;
+  border-radius: 50px;
+  border: 1px solid #473e2c;
+  padding: 1rem;
+  max-height: 35rem;
+  min-height: 35rem;
+}
+
+.testimonial .testi-item .item-img {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  border: 1px solid #473e2c;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.testimonial .testi-item h3 {
+  margin-bottom: 2rem;
+}
+
+.testimonial .testi-item p {
+  text-align: left;
+  line-height: 1.5;
 }
 /*# sourceMappingURL=style.css.map */

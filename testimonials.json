@@ -20,13 +20,13 @@
 
     {
       "name" : "Jayvin Delos Santos",
-      "img" : "./images/mer.png",
+      "img" : "./images/7.jpg",
       "desc" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus rem aliquam corporis repellendus quibusdam minus quis tenetur quam itaque maiores?"
     },
 
     {
       "name" : "Jacob Centeno",
-      "img" : "./images/mer.png",
+      "img" : "./images/5.jpg",
       "desc" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus rem aliquam corporis repellendus quibusdam minus quis tenetur quam itaque maiores?"
     }
   ]

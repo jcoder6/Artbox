@@ -817,57 +817,149 @@ p {
   text-align: center;
 }
 
-.testimonial .testi-cont {
-  margin: 0 auto;
-  padding: 2rem 4rem;
-}
-
 .testimonial .testi-item-cont {
-  border: 1px solid #473e2c;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  width: 90%;
+  position: relative;
+  margin: 0 auto;
+  height: 20rem;
+  max-height: 20rem;
   overflow: hidden;
-  gap: 5%;
-  max-width: 83rem;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  margin-bottom: 2rem;
 }
 
 .testimonial .testi-item {
-  width: 30%;
-  min-width: 24.5rem;
-  background-color: #ddc28a;
-  border-radius: 50px;
-  border: 1px solid #473e2c;
-  padding: 1rem;
-  max-height: 35rem;
-  min-height: 35rem;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2%;
+  background-color: #473e2c;
+  -webkit-transition: -webkit-transform 500ms ease-in-out;
+  transition: -webkit-transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
 }
 
-.testimonial .testi-item .item-img {
-  position: relative;
-  overflow: hidden;
-  width: 8rem;
-  height: 8rem;
+.testimonial .testi-item .person {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 18rem;
+  border: 3px solid #ddc28a;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.testimonial .testi-item .person .person-img {
+  height: 8.5rem;
+  width: 8.5rem;
   border-radius: 50%;
   border: 1px solid #473e2c;
-  margin: 0 auto;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 1.2rem;
 }
 
-.testimonial .testi-item .item-img img {
+.testimonial .testi-item .person .person-img img {
   position: absolute;
   width: 100%;
   height: 100%;
   left: 0;
 }
 
-.testimonial .testi-item h3 {
-  margin-bottom: 2rem;
+.testimonial .testi-item .person h3 {
+  color: white;
+  font-size: 1.8rem;
 }
 
-.testimonial .testi-item p {
+.testimonial .testi-item .desc {
+  padding: 1rem;
   text-align: left;
-  line-height: 1.5;
+  background-color: #ddc28a;
+  border-radius: 10px;
+}
+
+.testimonial .slide-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2%;
+}
+
+.testimonial .slide-btn .prev-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 5rem;
+  height: 5rem;
+  border: 1px solid #473e2c;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  margin-bottom: 2px;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+
+.testimonial .slide-btn .prev-btn svg path {
+  fill: #473e2c;
+}
+
+.testimonial .slide-btn .prev-btn:hover {
+  border: 5px solid #473e2c;
+  opacity: 1;
+}
+
+.testimonial .slide-btn .next-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 5rem;
+  height: 5rem;
+  border: 1px solid #473e2c;
+  border-radius: 50%;
+  padding: 1rem;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+}
+
+.testimonial .slide-btn .next-btn svg path {
+  fill: #473e2c;
+}
+
+.testimonial .slide-btn .next-btn:hover {
+  border: 5px solid #473e2c;
 }
 /*# sourceMappingURL=style.css.map */

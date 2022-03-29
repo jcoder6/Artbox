@@ -1,3 +1,6 @@
+/* =============================
+    NAV BAR MENU SCRIPTS
+===============================*/
 const burger = document.querySelector(".burger");
 const menuModal = document.querySelector(".header__menu");
 const body = document.querySelector('body');
@@ -18,6 +21,9 @@ menuLinks.forEach((menuLink) => {                        // FUNCTION THAT REMOVE
   })
 })
 
+/* =============================
+    TESTIMONIALS SCRIPTS
+===============================*/
 // Get the container where we should put our testimonials item
 const testiContainer = document.querySelector('.testi-item-cont');
 
@@ -27,7 +33,7 @@ testimonials.open("GET", "testimonials.json", true);
 testimonials.send();
 
 // check if we succesfully get the file and if it in readystate
-testimonials.onreadystatechange = function() {
+testimonials.onload = function() {
   if(this.readyState === 4){
 
     //fetch the item we get and convert it into array
@@ -47,17 +53,68 @@ function getEachTesti(items){
 }
 
 function compileItems(eachItems){
-  let collectItem = eachItems.map((eachItem) => {
+  let collectItem = eachItems.map((eachItem, index) => {
 
     // we collected all the data in the json then put it on html format so that we can put our page
-    return `<article class="testi-item">
-        <div class="item-img">
-        <img src="${eachItem.img}" alt="${eachItem.name}" />
+    return `<article class="testi-item" style="left: ${index * 100}%">
+        <div class="person">
+          <div class="person-img">
+            <img src="${eachItem.img}" alt="mer" />
+          </div>
+          <h3>${eachItem.name}</h3>
         </div>
-        <h3>${eachItem.name}</h3>
-        <p>${eachItem.desc}</p>
+        <p class="desc">${eachItem.desc}</p>
       </article>`
   }).join("");
 
   return collectItem;
+}
+
+const nextBtn = document.querySelector('.next-btn');
+const prevBtn = document.querySelector('.prev-btn');
+window.onload = function() {
+  const testiSlides = document.querySelectorAll('.testi-item');
+  const totalTesti = testiSlides.length - 2;
+  let count = 1;
+
+  defaultDisplay(testiSlides);
+  nextBtn.addEventListener('click', () => {
+    count++
+    console.log('next btn');
+    slideFunction(testiSlides, count, totalTesti);
+  })
+
+  prevBtn.addEventListener('click', () => {
+    count--
+    console.log('prev btn');
+    slideFunction(testiSlides, count, totalTesti);
+  })
+}
+
+function slideFunction(testiSlides, a, b) {
+  console.log(a);
+  if(a > b){
+    nextBtn.style.opacity = `0.5`
+    nextBtn.style.pointerEvents = `none`
+  } else {
+    nextBtn.style.opacity = `1`
+    nextBtn.style.pointerEvents = `auto`
+  }
+
+  if(a > 0 ){
+    prevBtn.style.opacity = `1`
+    prevBtn.style.pointerEvents = `auto`
+  } else {
+    prevBtn.style.opacity = `0.5`
+    prevBtn.style.pointerEvents = `none`
+  }
+  testiSlides.forEach((testiSlide) => {
+    testiSlide.style.transform = `translateX(-${a * 100}%)`
+  })
+}
+
+function defaultDisplay(testi){
+  testi.forEach((tes) => {
+    tes.style.transform = `translateX(-100%)`
+  })
 }

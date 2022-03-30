@@ -20,7 +20,7 @@ body {
   // overflow: hidden;
   scroll-behavior: smooth;
   color: rgb(24, 24, 24);
-  height: 350vh;
+  height: 500vh;
 }
 
 .container {
@@ -109,6 +109,10 @@ h1 {
   font-weight: 300;
   display: inline-block;
   margin-bottom: 2rem;
+
+  @include breakpoints-down(small) {
+    font-size: 2rem;
+  }
 }
 
 .title2 {
@@ -128,6 +132,9 @@ p {
   font-size: 1.5rem;
   line-height: 2;
 
+  @include breakpoints-down(medium) {
+    line-height: 1.5;
+  }
   @include breakpoints-down(small) {
     font-size: 1.3rem;
     line-height: 1.8;

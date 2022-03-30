@@ -48,5 +48,10 @@
     font-size: 2rem;
     padding: 1rem 5rem;
     font-weight: 300;
+
+    @include breakpoints-down(xmedium) {
+      padding: 1rem 3rem;
+      font-size: 1.5rem;
+    }
   }
 }

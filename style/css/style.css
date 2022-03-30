@@ -20,7 +20,7 @@ body {
   line-height: 1.6;
   scroll-behavior: smooth;
   color: #181818;
-  height: 350vh;
+  height: 500vh;
 }
 
 .container {
@@ -130,6 +130,12 @@ h1 {
   margin-bottom: 2rem;
 }
 
+@media (max-width: 39.9375rem) {
+  .title1 {
+    font-size: 2rem;
+  }
+}
+
 .title2 {
   font-size: 3.2rem;
   padding: 0 1.5rem 0.3rem;
@@ -146,6 +152,12 @@ h3 {
 p {
   font-size: 1.5rem;
   line-height: 2;
+}
+
+@media (max-width: 63.9375rem) {
+  p {
+    line-height: 1.5;
+  }
 }
 
 @media (max-width: 39.9375rem) {
@@ -575,6 +587,13 @@ p {
   font-weight: 300;
 }
 
+@media (max-width: 51.9375rem) {
+  .partners .shopNow-btn {
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+  }
+}
+
 .about {
   position: relative;
   display: -webkit-box;
@@ -633,6 +652,7 @@ p {
   position: relative;
   text-align: center;
   padding: 3rem;
+  background-color: rgba(112, 112, 112, 0.1);
 }
 
 @media (max-width: 63.9375rem) {
@@ -651,7 +671,7 @@ p {
 
 @media (max-width: 39.9375rem) {
   .about__contents {
-    padding: 1.5rem;
+    padding: 0.5rem;
   }
 }
 
@@ -665,6 +685,7 @@ p {
       -ms-flex-align: center;
           align-items: center;
   padding-bottom: 3rem;
+  margin-bottom: 5rem;
 }
 
 @media (max-width: 63.9375rem) {
@@ -829,6 +850,12 @@ p {
   margin-bottom: 2rem;
 }
 
+@media (max-width: 51.9375rem) {
+  .testimonial .testi-item-cont {
+    min-height: 35rem;
+  }
+}
+
 .testimonial .testi-item {
   position: absolute;
   width: 100%;
@@ -843,6 +870,21 @@ p {
   transition: -webkit-transform 500ms ease-in-out;
   transition: transform 500ms ease-in-out;
   transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+}
+
+@media (max-width: 51.9375rem) {
+  .testimonial .testi-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 23.9375rem) {
+  .testimonial .testi-item {
+    padding: 1rem;
+  }
 }
 
 .testimonial .testi-item .person {
@@ -892,6 +934,14 @@ p {
   text-align: left;
   background-color: #ddc28a;
   border-radius: 10px;
+  min-width: 22rem;
+}
+
+@media (max-width: 51.9375rem) {
+  .testimonial .testi-item .desc {
+    height: 100%;
+    min-width: 18rem;
+  }
 }
 
 .testimonial .slide-btn {
@@ -904,35 +954,11 @@ p {
   gap: 2%;
 }
 
-.testimonial .slide-btn .prev-btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 5rem;
-  height: 5rem;
-  border: 1px solid #473e2c;
-  border-radius: 50%;
-  cursor: pointer;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-  margin-bottom: 2px;
-  -webkit-transition: all 150ms ease-in-out;
-  transition: all 150ms ease-in-out;
-}
-
-.testimonial .slide-btn .prev-btn svg path {
-  fill: #473e2c;
-}
-
-.testimonial .slide-btn .prev-btn:hover {
-  border: 5px solid #473e2c;
-  opacity: 1;
+@media (max-width: 51.9375rem) {
+  .testimonial .slide-btn {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
 
 .testimonial .slide-btn .next-btn {
@@ -955,11 +981,55 @@ p {
   cursor: pointer;
 }
 
+@media (max-width: 51.9375rem) {
+  .testimonial .slide-btn .next-btn {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+}
+
 .testimonial .slide-btn .next-btn svg path {
   fill: #473e2c;
 }
 
 .testimonial .slide-btn .next-btn:hover {
+  border: 5px solid #473e2c;
+}
+
+.testimonial .slide-btn .prev-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 5rem;
+  height: 5rem;
+  border: 1px solid #473e2c;
+  border-radius: 50%;
+  padding: 1rem;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+}
+
+@media (max-width: 51.9375rem) {
+  .testimonial .slide-btn .prev-btn {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+}
+
+.testimonial .slide-btn .prev-btn svg path {
+  fill: #473e2c;
+}
+
+.testimonial .slide-btn .prev-btn:hover {
   border: 5px solid #473e2c;
 }
 /*# sourceMappingURL=style.css.map */

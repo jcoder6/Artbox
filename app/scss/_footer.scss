@@ -1,14 +1,27 @@
 .footer{
   background-color: $darkBrown;
   padding: 3rem;
+  @include breakpoints-down(small){
+    padding: 2rem 1.2rem;
+  }
   &__content{
     display: flex;
     border: 2px solid $lightBrown;
     padding: 2rem;
     border-radius: 50px;
+
+    @include breakpoints-down(xmedium){
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
     
     .logo-section{
       width: 30%;
+      @include breakpoints-down(xmedium){
+        width: auto;
+        margin-bottom: 2rem;
+      }
       .logo-cont{
         width: 10rem;
         overflow: hidden;
@@ -24,6 +37,12 @@
       display: flex;
       justify-content: space-around;
       // align-items: flex-start;
+      @include breakpoints-down(xmedium){
+        width: 100%;
+        justify-content: center;
+        gap: 6%;
+        margin-bottom: 3rem;
+      }
     }
 
     ul li {
@@ -41,19 +60,32 @@
 
     .basta{
       width: 30%;
-      justify-self: self-end;
-      display: flex;
-      flex-direction: column;
       margin-left: 20%;
+      @include breakpoints-down(xmedium){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: .5rem;
+        width: 100%;
+        margin: 0;
+      }
       
       .button{
-        align-self: flex-start;
+        // align-self: flex-start;
         margin-bottom: 3rem;
+        @include breakpoints-down(xmedium){
+          margin: 0 auto;
+          margin-bottom: .5rem;
+        }
       }
 
       .copy{
+        text-align: center;
         color: rgb(146, 146, 146);
         font-size: 1.2rem;
+        @include breakpoints-down(small){
+          font-size: 1rem;
+        }
       }
     }
   }

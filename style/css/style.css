@@ -1168,4 +1168,54 @@ p {
     font-size: 1rem;
   }
 }
+
+.shop-section {
+  width: 100%;
+}
+
+.shop-section .shop-img {
+  max-height: 25rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.shop-section .shop-img .img-shop {
+  width: 100%;
+  margin-top: -15rem;
+}
+
+@media (max-width: 63.9375rem) {
+  .shop-section .shop-img .img-shop {
+    margin-top: -5rem;
+  }
+}
+
+@media (max-width: 39.9375rem) {
+  .shop-section .shop-img .img-shop {
+    margin-top: 0;
+  }
+}
+
+.shop-section .shop-img .shop-img-txt {
+  color: white;
+  position: absolute;
+  bottom: .5rem;
+  right: 10rem;
+  font-size: 4rem;
+}
+
+@media (max-width: 63.9375rem) {
+  .shop-section .shop-img .shop-img-txt {
+    font-size: 3rem;
+    right: 0;
+    left: 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 39.9375rem) {
+  .shop-section .shop-img .shop-img-txt {
+    font-size: 2.2rem;
+  }
+}
 /*# sourceMappingURL=style.css.map */

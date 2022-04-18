@@ -1,0 +1,43 @@
+.shop-section{
+  // border: 2px solid red;
+  width: 100%;
+
+  .shop-img{
+    max-height: 25rem;
+    overflow: hidden;
+    position: relative;
+
+    .img-shop {
+      width: 100%;
+      margin-top: -15rem;
+
+      @include breakpoints-down(medium){
+        margin-top: -5rem;
+      }
+
+      @include breakpoints-down(small){
+        margin-top: 0;
+      }
+    }
+
+    .shop-img-txt{
+      color: white;
+      position: absolute;
+      bottom: .5rem;
+      right: 10rem;
+      font-size: 4rem;
+
+      @include breakpoints-down(medium){
+        font-size: 3rem;
+        right: 0;
+        left: 0;
+        text-align: center;
+      }
+
+      @include breakpoints-down(small){
+        font-size: 2.2rem;
+      }
+    }
+  }
+
+}

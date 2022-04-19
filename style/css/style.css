@@ -1218,4 +1218,168 @@ p {
     font-size: 2.2rem;
   }
 }
+
+.shop-section .arts-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  padding: 2.5rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 39.9375rem) {
+  .shop-section .arts-container {
+    padding: 2.5rem .5rem;
+  }
+}
+
+.shop-section .arts-container .art {
+  border: 5px solid #707070;
+  width: 45%;
+  min-width: 27rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 63.9375rem) {
+  .shop-section .arts-container .art {
+    aspect-ratio: 16/9;
+    width: 80%;
+    min-width: auto;
+  }
+}
+
+@media (max-width: 39.9375rem) {
+  .shop-section .arts-container .art {
+    width: 95%;
+  }
+}
+
+.shop-section .arts-container .art:last-child {
+  justify-self: flex-start;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.shop-section .arts-container .art-detail {
+  width: 50%;
+  padding: 1rem;
+  position: relative;
+}
+
+.shop-section .arts-container .art-detail .art-title {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  letter-spacing: 3px;
+  margin-bottom: .5rem;
+}
+
+@media (max-width: 39.9375rem) {
+  .shop-section .arts-container .art-detail .art-title {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.shop-section .arts-container .art-detail .art-desc {
+  color: #473e2c;
+  line-height: 1.2rem;
+  margin-bottom: 1.5rem;
+  font-size: .8rem;
+}
+
+@media (max-width: 39.9375rem) {
+  .shop-section .arts-container .art-detail .art-desc {
+    font-size: .5rem;
+  }
+}
+
+.shop-section .arts-container .art-detail .art-desc .price, .shop-section .arts-container .art-detail .art-desc .artist {
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: .3rem;
+}
+
+.shop-section .arts-container .art-detail .art-desc .price em, .shop-section .arts-container .art-detail .art-desc .artist em {
+  opacity: 0;
+}
+
+.shop-section .arts-container .art-detail .art-desc .price span, .shop-section .arts-container .art-detail .art-desc .artist span {
+  display: block;
+  color: #707070;
+  font-weight: 300;
+}
+
+.shop-section .arts-container .art-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  width: 100%;
+  left: .1rem;
+  bottom: 5%;
+}
+
+@media (max-width: 39.9375rem) {
+  .shop-section .arts-container .art-btns {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: .8rem;
+    left: 1rem;
+  }
+  .shop-section .arts-container .art-btns .atc-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: .2rem;
+  }
+  .shop-section .arts-container .art-btns .atc-btn img {
+    width: 32%;
+  }
+}
+
+.shop-section .arts-container .art-btns .atc-btn span {
+  display: none;
+}
+
+@media (max-width: 39.9375rem) {
+  .shop-section .arts-container .art-btns .atc-btn span {
+    display: block;
+  }
+}
+
+.shop-section .arts-container .art-btns .button {
+  padding: .7rem 1.7rem;
+}
+
+.shop-section .arts-container .art-img {
+  min-height: 22rem;
+  overflow: hidden;
+  width: 50%;
+}
+
+.shop-section .arts-container .art-img img {
+  width: 100%;
+  height: 100%;
+}
 /*# sourceMappingURL=style.css.map */

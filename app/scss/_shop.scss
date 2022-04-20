@@ -40,4 +40,133 @@
     }
   }
 
+  .arts-container{
+    // border: 1px solid red;
+    display: flex;
+    position: relative;
+    padding: 2.5rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    
+    @include breakpoints-down(small){
+      padding: 2.5rem .5rem;
+    }
+    .art{
+      border: 5px solid $darkGray;
+      width: 45%;
+      min-width: 27rem;
+      display: flex;
+      
+      @include breakpoints-down(medium){
+        aspect-ratio: 16/9;
+        width: 80%;
+        min-width: auto;
+      }
+
+      @include breakpoints-down(small){
+        width: 95%;
+      }
+
+      &:last-child{
+        // border: 1px solid red;
+        justify-self: flex-start;
+        align-self: flex-start;
+      }
+    }
+
+    .art-detail{
+      width: 50%;
+      padding: 1rem;
+      position: relative;
+      .art-title{
+        font-size: 2.5rem;
+        line-height: 1.2;
+        letter-spacing: 3px;
+        margin-bottom: .5rem;
+        @include breakpoints-down(small){
+          font-size: 1.8rem;
+          margin-bottom: 2rem;
+        }
+      }
+
+      .art-desc{
+        color: $darkBrown;
+        line-height: 1.2rem;
+        margin-bottom: 1.5rem;
+        font-size: .8rem;
+
+        @include breakpoints-down(small){
+          font-size: .5rem;
+        }
+        .price, .artist{
+          font-weight: bold;
+          line-height: 1.2;
+          margin-bottom: .3rem;
+          em{
+            opacity: 0;
+          }
+          span {
+            display: block;
+            color: $darkGray;
+            font-weight: 300;
+          }
+        }
+      }
+    }
+
+    .art-btns{
+      display: flex;
+      justify-content: space-around;
+      align-items:  center;
+      position: absolute;
+      width: 100%;
+      left: .1rem;
+      bottom: 5%;
+
+      @include breakpoints-down(small){
+        flex-direction: column;
+        align-items: flex-start;
+        gap: .8rem;
+        left: 1rem;
+
+        .atc-btn{
+          display: flex;
+          align-items: center;
+          gap: .2rem;
+
+          img{
+            width: 32%;
+          }
+        }
+      }
+
+      .atc-btn{
+        span{
+          display: none;
+          @include breakpoints-down(small){
+            display: block;
+          }
+        }
+      }
+
+      .button{
+        padding: .7rem 1.7rem;
+      }
+    }
+
+    .art-img{
+      min-height: 22rem;
+      overflow: hidden;
+      width: 50%;
+
+
+      img{
+        width: 100%;
+        height: 100%;
+      }
+
+    }
+  }
+
 }

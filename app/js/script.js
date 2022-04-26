@@ -29,7 +29,7 @@ const testiContainer = document.querySelector('.testi-item-cont');
 
 //Get the file form json
 const testimonials = new XMLHttpRequest();
-testimonials.open("GET", "testimonials.json", true);
+testimonials.open("GET", "json/testimonials.json", true);
 testimonials.send();
 
 // check if we succesfully get the file and if it in readystate
@@ -78,7 +78,7 @@ window.onload = function() {
   let count = 1;
 
   defaultDisplay(testiSlides);
-  nextBtn.addEventListener('click', () => {
+  nextBtn.addEventListener('click', function() {
     count++
     console.log('next btn');
     slideFunction(testiSlides, count, totalTesti);

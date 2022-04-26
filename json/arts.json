@@ -1,0 +1,75 @@
+{
+  "arts": [
+    {
+      "name": "The Starry Night",
+      "artist": "Van Gogh",
+      "price": "350, 000",
+      "category": "paintings",
+      "image" : "../images/paint1.png",
+      "active": "yes"
+    },
+
+    {
+      "name": "Spliarium",
+      "artist": "Juan Luna",
+      "price": "500, 000",
+      "category": "paintings",
+      "image" : "../images/paint2.png",
+      "active": "yes"
+    },
+
+    {
+      "name": "Valiant Feminine",
+      "artist": "Shekina-chan",
+      "price": "300",
+      "category": "drawing",
+      "image" : "../images/charc1.png",
+      "active": "yes"
+    },
+
+    {
+      "name": "Mr. Bean",
+      "artist": "Kenichi-chan",
+      "price": "100",
+      "category": "drawing",
+      "image" : "../images/charc3.png",
+      "active": "yes"
+    },
+
+    {
+      "name": "Endless Smile",
+      "artist": "Shekina-chan",
+      "price": "250",
+      "category": "drawing",
+      "image" : "../images/charc2.png",
+      "active": "yes"
+    },
+
+    {
+      "name": "Harry Styles",
+      "artist": "Shekina-chan",
+      "price": "150",
+      "category": "drawing",
+      "image" : "../images/charc4.png",
+      "active": "yes"
+    },
+
+    {
+      "name": "Bae Suzy",
+      "artist": "omer-chan",
+      "price": "100",
+      "category": "digital art",
+      "image" : "../images/digital1.png",
+      "active": "yes"
+    },
+
+    {
+      "name": "Park Min Young",
+      "artist": "omer-chan",
+      "price": "150",
+      "category": "digital art",
+      "image" : "../images/digital2.png",
+      "active": "yes"
+    }
+  ]
+}

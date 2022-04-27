@@ -1,6 +1,7 @@
 
 // SECTION THAT WILL DISPLAY THE ARTS IN THE SHOP MODULE THE FETCHED IN JSON
-
+const categBtn = document.querySelector('.categ-btn');
+const categBody = document.querySelector('.categ-body');
 // FETCHED THE DATA USING XMLHttpRequest
 const artsContainer = document.querySelector('.arts-container');
 const artsData = new XMLHttpRequest();
@@ -12,7 +13,12 @@ artsData.onload = () => {
     // console.log(artsData);
     const artItems = JSON.parse(artsData.responseText);
     const arts = artItems.arts;
+    getUniqueCategories(arts);
     displayArts(arts);
+
+    categBtn.addEventListener('click', () => {
+      categBody.classList.toggle('categ-body-open');
+    })
   }
 }
 
@@ -42,3 +48,13 @@ function displayArts(arts){
   artsContainer.innerHTML = compiledArts;
 }
 // SECTION THAT WILL DISPLAY THE ARTS IN THE SHOP MODULE THE FETCHED IN JSON
+
+function getUniqueCategories(arts){
+  let categoriesArray = ['all'];
+  arts.map((art) => {
+    categoriesArray.push(art.category);
+  })
+
+  const uniqueCategory = [... new Set(categoriesArray)];
+  console.log(uniqueCategory);
+}

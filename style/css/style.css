@@ -1409,8 +1409,10 @@ p {
   width: 100%;
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
-  -webkit-transition: all 500ms ease-in-out;
-  transition: all 500ms ease-in-out;
+  -webkit-transition: all 250ms ease-in, -webkit-transform 500ms ease-out .3s;
+  transition: all 250ms ease-in, -webkit-transform 500ms ease-out .3s;
+  transition: all 250ms ease-in, transform 500ms ease-out .3s;
+  transition: all 250ms ease-in, transform 500ms ease-out .3s, -webkit-transform 500ms ease-out .3s;
   opacity: 0;
   overflow: hidden;
 }
@@ -1423,6 +1425,7 @@ p {
 }
 
 .shop-section .options .category .categ-body li a {
+  text-transform: capitalize;
   font-size: 1.5rem;
   letter-spacing: 2px;
   -webkit-transition: color 250ms ease-in-out;
@@ -1462,6 +1465,7 @@ p {
   margin: auto;
   height: 1rem;
   width: 1rem;
+  margin-left: .5rem;
   border-right: 5px solid #ddc28a;
   border-bottom: 5px solid #ddc28a;
   -webkit-transform: rotate(45deg);

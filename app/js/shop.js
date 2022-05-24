@@ -56,5 +56,38 @@ function getUniqueCategories(arts){
   })
 
   const uniqueCategory = [... new Set(categoriesArray)];
-  console.log(uniqueCategory);
+  // console.log(uniqueCategory);
+  displayCategories(uniqueCategory);
+  displayArtsCategory(arts);
+}
+
+
+function displayCategories(categories){
+  let categoriesBtns = categories.map(categ => {
+    return `<li class="categ-btns" data-category="${categ}"><a>${categ}</a></li>`
+  }).join("");
+
+  categBody.innerHTML = categoriesBtns;
+}
+
+function displayArtsCategory(arts){
+  const filters = document.querySelectorAll('.categ-btns');
+  filters.forEach(filter => {
+    filter.addEventListener('click', (e) => {
+      const filterClicked = e.currentTarget.dataset.category;
+      let filtered = arts.filter(art => {
+        if(art.category === filterClicked){
+          return art;
+        }
+      })
+
+      if(filterClicked === 'all'){
+        displayArts(arts);
+      } else {
+        displayArts(filtered);
+      }
+
+      categBody.classList.remove('categ-body-open');
+    })
+  })
 }

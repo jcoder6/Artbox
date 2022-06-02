@@ -1,0 +1,107 @@
+.login-container{
+  display: flex;
+  height: 70vh;
+  width: 60vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  border-radius: 30px;
+  box-shadow: 5px 5px 20px rgba($color: #000000, $alpha: .3);
+
+  .login-img{
+    width: 50%;
+    img{
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .login-form{
+    padding: 2rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background-color: rgba($color: $darkGray, $alpha: .1);
+    // justify-content: center;
+    align-items: center;
+    .login-nav{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: $lightBrown;
+      padding: .5rem;
+
+      p{
+        font-size: 1.2rem;
+        line-height: 1;
+      }
+    }
+
+    .login-logo {
+      width: 8rem;
+      height: 3rem;
+      overflow:hidden;
+      position: relative;
+      margin-top: .5rem;
+      margin-bottom: 1rem;
+      img{
+        width: 100%;
+        position: absolute;
+      }
+    }
+
+    .login-link {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: .5rem;
+      padding-bottom: 1rem;
+      border-bottom: 2px solid $darkBrown;
+      margin-bottom: 2rem;
+
+      a {
+        text-align: center;
+        width: 100%;
+        padding: .3rem;
+        border: 1px solid $darkGray;
+        font-size: .9rem;
+        position: relative;
+        border-radius: 10px;
+        span {
+          height: 1.5rem;
+          width: 1.5rem;
+          border: 1px solid red;
+          position: absolute;
+          border-radius: 50%;
+          top: 50%;
+          transform: translateY(-50%);
+          left: 1rem
+        }
+      }
+    }
+
+    .form-cont{
+      width: 70%;
+      display: flex;
+      gap: .5rem;
+      flex-direction: column;
+      // border: 1px solid red;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%);
+      input{
+        padding: .3rem 1rem;
+        border: none;
+        border-bottom: 1px solid $darkBrown;
+      }
+
+      span{
+        display: inline-block;
+      }
+    }
+  }
+}

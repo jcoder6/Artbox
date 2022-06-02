@@ -15,6 +15,7 @@ artsData.onload = () => {
     const arts = artItems.arts;
     getUniqueCategories(arts);
     displayArts(arts);
+    placeOrderFunction();
 
     categBtn.addEventListener('click', () => {
       categBody.classList.toggle('categ-body-open');
@@ -36,7 +37,9 @@ function displayArts(arts){
                 <img src="./images/svgs/add to cart.svg" alt="Add to cart">
                 <span class="cart-txt">Add to cart</span>
               </a>
-              <button class="button">Place order</button>
+              <a href="./place-order.html">
+                <button class="place-order-btn" data-id="${art.id}">Place order</button>
+              </a>
             </div>
           </div>
           <div class="art-img">
@@ -88,6 +91,21 @@ function displayArtsCategory(arts){
       }
 
       categBody.classList.remove('categ-body-open');
+    })
+  })
+}
+
+function placeOrderFunction() {
+  const placeBtns = document.querySelectorAll('.place-order-btn');
+  
+  placeBtns.forEach(placeBtn => {
+    placeBtn.addEventListener('click', (e) => {
+      const placeOrderModal = document.querySelector('.place-order-modal');
+      const body = document.querySelector('body');
+      let order = e.currentTarget.dataset.id;
+
+      placeOrderModal.classList.add('place-order-modal-open');
+      body.classList.add('no-scroll');
     })
   })
 }

@@ -1482,4 +1482,313 @@ p {
   -webkit-transform: rotate(-315deg);
           transform: rotate(-315deg);
 }
+
+.place-order-modal .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 5;
+  display: none;
+}
+
+.place-order-modal .modal-container {
+  position: absolute;
+  width: 90%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 6rem;
+  background-color: white;
+  z-index: 6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2%;
+  display: none;
+}
+
+.place-order-modal .modal-container .item-image {
+  position: relative;
+  width: 50%;
+  height: 65vh;
+  overflow-x: scroll;
+}
+
+.place-order-modal .modal-container .item-image img {
+  position: absolute;
+  width: 100%;
+}
+
+.place-order-modal .modal-container .item-details {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.place-order-modal .modal-container .item-details .item-info p {
+  margin-bottom: 1.5rem;
+}
+
+.place-order-modal .modal-container .item-details .item-info span {
+  font-weight: bold;
+  color: #473e2c;
+}
+
+.place-order-modal .modal-container .item-details .item-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.place-order-modal .modal-container .item-details .item-btns .atc {
+  border: none;
+  background-color: white;
+  color: #473e2c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+  font-size: 1.4rem;
+  padding: .5rem 1.5rem;
+}
+
+.place-order-modal .modal-container .item-details .item-btns .atc span {
+  padding: 0;
+  margin: 0;
+}
+
+.place-order-modal .modal-container .item-details .item-btns .buy-now {
+  border: 1px solid #ddc28a;
+  font-size: 1.4rem;
+  padding: 1rem 4rem;
+}
+
+.place-order-modal .modal-container .close-btn {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  top: 2rem;
+  right: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.place-order-modal .modal-container .close-btn:hover {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.place-order-modal .modal-container .close-btn span {
+  height: 3px;
+  border-radius: 100px;
+  width: 30px;
+  background-color: #473e2c;
+  position: absolute;
+}
+
+.place-order-modal .modal-container .close-btn span:first-child {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.place-order-modal .modal-container .close-btn span:last-child {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.place-order-modal-open .overlay {
+  display: initial;
+}
+
+.place-order-modal-open .modal-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.place-order-modal .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 5;
+  display: initial;
+}
+
+.place-order-modal .modal-container {
+  position: absolute;
+  width: 90%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 6rem;
+  background-color: white;
+  z-index: 6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2%;
+}
+
+.place-order-modal .modal-container .item-image {
+  position: relative;
+  width: 50%;
+  height: 65vh;
+  overflow-x: scroll;
+}
+
+.place-order-modal .modal-container .item-image img {
+  position: absolute;
+  width: 100%;
+}
+
+.place-order-modal .modal-container .item-details {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.place-order-modal .modal-container .item-details .item-info p {
+  margin-bottom: 1.5rem;
+}
+
+.place-order-modal .modal-container .item-details .item-info span {
+  font-weight: bold;
+  color: #473e2c;
+}
+
+.place-order-modal .modal-container .item-details .item-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.place-order-modal .modal-container .item-details .item-btns .atc {
+  border: none;
+  background-color: white;
+  color: #473e2c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+  font-size: 1.4rem;
+  padding: .5rem 1.5rem;
+}
+
+.place-order-modal .modal-container .item-details .item-btns .atc span {
+  padding: 0;
+  margin: 0;
+}
+
+.place-order-modal .modal-container .item-details .item-btns .buy-now {
+  border: 1px solid #ddc28a;
+  font-size: 1.4rem;
+  padding: 1rem 4rem;
+}
+
+.place-order-modal .modal-container .close-btn {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  top: 2rem;
+  right: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.place-order-modal .modal-container .close-btn:hover {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.place-order-modal .modal-container .close-btn span {
+  height: 3px;
+  border-radius: 100px;
+  width: 30px;
+  background-color: #473e2c;
+  position: absolute;
+}
+
+.place-order-modal .modal-container .close-btn span:first-child {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.place-order-modal .modal-container .close-btn span:last-child {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.no-scroll {
+  overflow: hidden;
+}
 /*# sourceMappingURL=style.css.map */
